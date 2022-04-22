@@ -1,0 +1,23 @@
+select {
+    font-style: 'Akshar', sans-serif;
+    max-width: 60%;
+    width: 100%;
+    padding: 4px 2px;
+}
+
+select:focus {
+    outline: none;
+}
+
+select {
+    font-family: 'Akshar', sans-serif;
+    font-size: 15px;
+    color: black;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+select option {
+    font-family: 'Akshar', sans-serif;
+    border: 1px solid black;
+}

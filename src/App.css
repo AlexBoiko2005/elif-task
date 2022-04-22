@@ -1,0 +1,248 @@
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px 0 50px 0;
+    cursor: default;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    /* margin-left: auto; */
+    margin-right: 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    transform: translateX(-8px);
+}
+
+label {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid rgb(0, 36, 0); */
+    border-radius: 5px;
+    padding: 0 10px;
+    max-width: 70%;
+    width: 100%;
+}
+
+label span {
+    position: absolute;
+    right: 15px;
+    top: auto;
+    bottom: auto; 
+    line-height: 5px;
+    font-size: 13px;
+}
+
+.bank-name::after {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    content: 'your bank name';
+    max-width: 180px;
+    background-color: rgb(236, 228, 217);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(10%, -35%);
+    background-color: blur(2px);
+    transition: 0.3s all ease;
+    z-index: 1000;
+}
+
+.bank-name:hover::after {
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.interest-rate::after {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    content: ' the annual percentage rate that expresses the amount of money the bank charges additionally for the use of assets the person borrowed money for';
+    width: 150px;
+    background-color: rgb(236, 228, 217);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(10%, -35%);
+    background-color: blur(2px);
+    transition: 0.3s all ease;
+    z-index: 1000;
+}
+
+.interest-rate:hover::after {
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.max-loan::after {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    content: ' the maximum amount of money a bank is able to borrow';
+    width: 150px;
+    background-color: rgb(236, 228, 217);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(10%, -35%);
+    background-color: blur(2px);
+    transition: 0.3s all ease;
+    z-index: 1000;
+}
+
+.max-loan:hover::after {
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.upfront-pay::after {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    content: ' the amount of money a person needs to pay upfront (if a person takes a loan of $300.000 and bank minimum down payment is 20%, it means that person must pay the bank $60.000 as an initial mortgage payment)';
+    width: 150px;
+    background-color: rgb(236, 228, 217);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(10%, -35%);
+    background-color: blur(2px);
+    transition: 0.3s all ease;
+    z-index: 1000;
+}
+
+.upfront-pay:hover::after {
+    display: inline-block;
+    opacity: 0.9;
+}
+.loan-term::after {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    content: ' a period of time in which a person must pay off the loan';
+    width: 150px;
+    background-color: rgb(236, 228, 217);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(10%, -35%);
+    background-color: blur(2px);
+    transition: 0.3s all ease;
+    z-index: 1000;
+}
+
+.loan-term:hover::after {
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.initial-loan::after {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    content: ' amount of money that you can take';
+    width: 150px;
+    background-color: rgb(236, 228, 217);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(10%, -35%);
+    background-color: blur(2px);
+    transition: 0.3s all ease;
+    z-index: 1000;
+}
+
+.initial-loan:hover::after {
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.down-payment::after {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    content: ' amount of money you can pay upfront';
+    width: 150px;
+    background-color: rgb(236, 228, 217);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(10%, -35%);
+    background-color: blur(2px);
+    transition: 0.3s all ease;
+    z-index: 1000;
+}
+
+.down-payment:hover::after {
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.bank-sets::after {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    content: ' choose bank';
+    width: 150px;
+    background-color: rgb(236, 228, 217);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(10%, -35%);
+    background-color: blur(2px);
+    transition: 0.3s all ease;
+    z-index: 1000;
+}
+
+.bank-sets:hover::after {
+    display: inline-block;
+    opacity: 0.9;
+}
+
+
+
+
+input {
+    font-family: 'Akshar', sans-serif;
+    font-size: 15px;
+    width: 60%;
+    padding: 2px 7px;
+    height: fit-content;
+    color:rgb(0, 0, 0);
+    border-radius: 2px;
+    border: 1px solid rgb(0, 36, 0);
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin-right: 10px;
+}
+
+
+
+input#months-input::-webkit-outer-spin-button,
+input#months-input::-webkit-inner-spin-button {
+    margin-right: 40px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input#months-input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+select {
+    
+}

@@ -1,0 +1,26 @@
+.modal {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    transform: translateY(-700px);
+    transition: .2s all ease;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 10;
+    font-size: 18px;
+}
+
+.modal li {
+    margin-left: 25px;
+}
+
+.modal p {
+    margin-top: 30px;
+}
+
+.modal p span {
+    font-size: 20px;
+    margin: 0 5px;
+}
